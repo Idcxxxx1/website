@@ -8,49 +8,66 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f4f4f9;
+      background-color: #f0f8ff; /* Light blue tint */
       color: #333;
       margin: 0;
       padding: 20px;
     }
+
     h1 {
       margin-bottom: 30px;
+      color: #628cc7;
     }
+
     .link-container {
       display: inline-block;
-      text-align: left;
+      text-align: center;
     }
+
     .link {
       display: flex;
       align-items: center;
-      margin: 10px 0;
+      justify-content: center;
+      margin: 15px 0;
       text-decoration: none;
-      color: #333;
       font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: #628cc7;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      width: 220px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .link img {
+
+    .link:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon {
       width: 24px;
       height: 24px;
       margin-right: 10px;
-    }
-    .link:hover {
-      color: #0073e6;
     }
   </style>
 </head>
 <body>
   <h1>My Social Links</h1>
   <div class="link-container">
-    <a href="https://www.tiktok.com/@idcxxxx1?_t=ZN-8tKhbhZfpvq&_r=1" class="link" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg" alt="TikTok">
+    <a class="link" href="https://www.tiktok.com/@idcxxxx1?_t=ZN-8tKhbhZfpvq&_r=1" target="_blank">
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/TikTok_logo.svg" alt="TikTok Icon">
       TikTok
     </a>
-    <a href="https://steamcommunity.com/id/idcxxxx1/" class="link" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
+    <a class="link" href="https://steamcommunity.com/id/idcxxxx1/" target="_blank">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Steam Icon">
       Steam
     </a>
-    <a href="https://discord.com/users/967539270564872343" class="link" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord">
+    <a class="link" href="https://discord.com/users/967539270564872343" target="_blank">
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord Icon">
       Discord
     </a>
   </div>
